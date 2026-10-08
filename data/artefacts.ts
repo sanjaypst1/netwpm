@@ -1,0 +1,197 @@
+import type { Artefact } from "@/types";
+
+export const artefacts: Artefact[] = [
+  {
+    slug: "data-product-canvas",
+    title: "Data Product Canvas",
+    purpose: "Define a data product by consumer, decision, quality, access and success measures.",
+    usedIn: "Product Lab and each employer case study.",
+    status: "portfolio-demo",
+    sections: [
+      { heading: "Consumer", body: "Who uses this, in which decision, how often, and what happens if it is wrong or late." },
+      { heading: "Decision", body: "The choice the product must improve: fund, sequence, accept, remediate or stop." },
+      { heading: "Inputs and outputs", body: "Source domains, curated outputs and the semantic layer the consumer actually sees." },
+      { heading: "Quality and freshness", body: "Fields that must be complete, accurate and acceptably fresh for the decision." },
+      { heading: "Access, privacy and risk", body: "Who may see what, which PII is present, and which controls apply." },
+      { heading: "Adoption and health", body: "How we will know the product is used and trusted." },
+    ],
+  },
+  {
+    slug: "product-vision",
+    title: "Product Vision",
+    purpose: "Hold a one-page view of who the product is for and what changes if it works.",
+    usedIn: "Home, About and Product Lab.",
+    status: "portfolio-demo",
+    sections: [
+      { heading: "Vision", body: "Trusted adviser and client data products that turn operational signals into decisions and measured outcomes." },
+      { heading: "For", body: "Advisers, operations, product, risk, compliance, finance and senior leaders." },
+      { heading: "Unlike unmanaged reporting", body: "Governed products have owners, contracts, quality expectations and adoption measures." },
+    ],
+  },
+  {
+    slug: "opportunity-solution-tree",
+    title: "Opportunity Solution Tree",
+    purpose: "Keep discovery attached to a desired outcome rather than a solution list.",
+    usedIn: "Product Lab and case-study discovery.",
+    status: "illustrative",
+    sections: [
+      { heading: "Outcome", body: "Reduce onboarding friction and avoidable service demand using trusted data products." },
+      { heading: "Opportunities", body: "Onboarding delay, service repeat contacts, weak adoption insight, unclear data ownership." },
+      { heading: "Solutions", body: "Journey analytics, service insights, quality observatory, adoption scorecard." },
+      { heading: "Experiments", body: "Validate the decision, the consumer and the minimum trusted fields before scaling." },
+    ],
+  },
+  {
+    slug: "user-journey",
+    title: "User Journey",
+    purpose: "Show where advisers, operations and product managers need information.",
+    usedIn: "UBS, Bank of America and Product Lab.",
+    status: "illustrative",
+    sections: [
+      { heading: "Discover need", body: "A delay, exception or adoption gap appears in the operating week." },
+      { heading: "Find evidence", body: "The consumer should reach a governed product, not a personal workbook." },
+      { heading: "Decide", body: "Sequence a fix, accept a release, or ask for better quality." },
+      { heading: "Act and learn", body: "The outcome feeds the backlog." },
+    ],
+  },
+  {
+    slug: "service-blueprint",
+    title: "Service Blueprint",
+    purpose: "Connect frontstage adviser/client moments to backstage data, controls and operations.",
+    usedIn: "UBS and Daimler case studies.",
+    status: "illustrative",
+    sections: [
+      { heading: "Frontstage", body: "Onboarding, servicing, application-to-approval, first-time resolution." },
+      { heading: "Backstage", body: "Product, operations, data, risk, suppliers." },
+      { heading: "Support evidence", body: "Quality, freshness, readiness, incident and adoption measures." },
+    ],
+  },
+  {
+    slug: "problem-statement",
+    title: "Problem Statement",
+    purpose: "Force a problem to be specific enough to test.",
+    usedIn: "Every case study.",
+    status: "portfolio-demo",
+    sections: [
+      { heading: "Pattern", body: "For [consumer] who [need], the current experience [friction], which causes [cost], and we will know it is better when [measure]." },
+    ],
+  },
+  {
+    slug: "assumption-map",
+    title: "Assumption Map",
+    purpose: "Separate what is known from what must be tested.",
+    usedIn: "Product Lab.",
+    status: "illustrative",
+    sections: [
+      { heading: "Known", body: "Confirmed CV evidence and named job-description technologies." },
+      { heading: "Testable", body: "Which data products advisers would actually use weekly." },
+      { heading: "Unknown", body: "Snowflake depth, Azure services, official product names, baselines." },
+    ],
+  },
+  {
+    slug: "prioritisation-matrix",
+    title: "Prioritisation Matrix",
+    purpose: "Make value, risk, feasibility, data quality and adoption visible together.",
+    usedIn: "NAB, Bank of America, Merck.",
+    status: "illustrative",
+    sections: [
+      { heading: "Criteria", body: "Customer value, business value, risk reduction, regulatory urgency, data quality, feasibility, effort, dependency complexity, time criticality, adoption potential." },
+      { heading: "Method note", body: "RICE and WSJF are shown as industry methods, not as confirmed employer algorithms." },
+    ],
+  },
+  {
+    slug: "outcome-based-roadmap",
+    title: "Outcome-Based Roadmap",
+    purpose: "Sequence learning and trust before scale.",
+    usedIn: "All case studies.",
+    status: "portfolio-demo",
+    sections: [
+      { heading: "Stages", body: "Discover → Validate → Establish trusted data → Deliver MVDP → Drive adoption → Scale → Optimise." },
+    ],
+  },
+  {
+    slug: "product-backlog-example",
+    title: "Product Backlog Example",
+    purpose: "Show how a data-product backlog is sliced by consumer outcome, not by pipeline task.",
+    usedIn: "Product Lab.",
+    status: "illustrative",
+    sections: [
+      { heading: "Example slices", body: "Critical-field completeness for onboarding; named owners for priority datasets; first Power BI product scorecard used in a weekly forum; access model for operations and risk." },
+      { heading: "Tooling", body: "Jira is a target-role tool. Not claimed as confirmed at every employer." },
+    ],
+  },
+  {
+    slug: "okr-tree",
+    title: "OKR Tree",
+    purpose: "Connect north-star outcomes to product, quality and delivery measures without fake targets.",
+    usedIn: "Product Lab.",
+    status: "illustrative",
+    sections: [
+      { heading: "Rule", body: "Baselines to be established. Targets to be agreed. Measurement begins after release. Data owner to be assigned." },
+    ],
+  },
+  {
+    slug: "metrics-framework",
+    title: "Metrics Framework",
+    purpose: "Keep confirmed CV metrics separate from illustrative lab metrics.",
+    usedIn: "Experience, case studies and Product Lab.",
+    status: "portfolio-demo",
+    sections: [
+      { heading: "Confirmed", body: "Only CV figures are charted as results." },
+      { heading: "Illustrative", body: "Lab metrics show structure, not invented performance." },
+    ],
+  },
+  {
+    slug: "data-governance-raci",
+    title: "Data Governance RACI",
+    purpose: "Show product, data, engineering, risk, privacy and operations accountabilities.",
+    usedIn: "Role alignment and Product Lab.",
+    status: "illustrative",
+    sections: [
+      { heading: "Product", body: "Accountable for consumer, decision, adoption and outcomes." },
+      { heading: "Data / Engineering", body: "Responsible for pipelines, contracts, quality instrumentation and platform reliability — in partnership, not as a claim that Sanjay was a Data Engineer." },
+      { heading: "Risk, Compliance, Privacy", body: "Consulted and, where required, accountable for access, retention and control evidence." },
+      { heading: "Operations / consumers", body: "Responsible for using the product and returning defects in quality or usefulness." },
+    ],
+  },
+  {
+    slug: "data-product-scorecard",
+    title: "Data Product Scorecard",
+    purpose: "A weekly view of trust, adoption and action.",
+    usedIn: "Product Lab.",
+    status: "illustrative",
+    sections: [
+      { heading: "Tiles", body: "Consumers, freshness, completeness, unresolved exceptions, named owners, decisions supported. All labelled illustrative." },
+    ],
+  },
+  {
+    slug: "risk-and-dependency-register",
+    title: "Risk and Dependency Register",
+    purpose: "Make privacy, supplier, platform and adoption risks visible in the same register as delivery dependencies.",
+    usedIn: "Merck, NAB, Product Lab.",
+    status: "illustrative",
+    sections: [
+      { heading: "Categories", body: "Data ownership, quality, access, privacy, supplier, release readiness, adoption, measurement." },
+    ],
+  },
+  {
+    slug: "release-readiness-checklist",
+    title: "Release Readiness Checklist",
+    purpose: "Prevent data products from launching without consumers, controls and support.",
+    usedIn: "NAB, Bank of America, Daimler, Merck.",
+    status: "portfolio-demo",
+    sections: [
+      { heading: "Checks", body: "Named consumer, acceptance criteria, quality threshold, access model, support model, decision record, rollback, measurement owner." },
+    ],
+  },
+  {
+    slug: "product-review-template",
+    title: "Product Review Template",
+    purpose: "Run a review that inspects outcomes, not activity.",
+    usedIn: "NAB coaching and UBS product reviews.",
+    status: "portfolio-demo",
+    sections: [
+      { heading: "Agenda", body: "Problem still true? Evidence? Adoption? Quality? Risks? Next increment? Stop, persist or pivot?" },
+    ],
+  },
+];

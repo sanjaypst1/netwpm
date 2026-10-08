@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0b1f3a;
+  --navy-deep: #071525;
+  --ink: #1a2332;
+  --muted: #5c6778;
+  --line: #d9d3c8;
+  --paper: #f6f3ee;
+  --paper-2: #efeae2;
+  --white: #fffcf8;
+  --blue: #3a6ea5;
+  --teal: #1f7a6b;
+  --aqua: #5ca8a4;
+  --violet: #6b5b95;
+  --coral: #c45c4a;
+  --gold: #b0893a;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-cream: var(--white);
+  --color-blue: var(--blue);
+  --color-teal: var(--teal);
+  --color-aqua: var(--aqua);
+  --color-violet: var(--violet);
+  --color-coral: var(--coral);
+  --color-gold: var(--gold);
+  --font-sans: var(--font-sans-loaded);
+  --font-serif: var(--font-serif-loaded);
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), "Segoe UI", sans-serif;
+}
+
+::selection {
+  background: #d7ebe8;
+  color: var(--navy);
+}
+
+:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  background: var(--navy);
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.prose-portfolio h2 {
+  font-family: var(--font-serif), Georgia, serif;
+  color: var(--navy);
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.prose-portfolio p {
+  color: var(--muted);
+  line-height: 1.65;
+}
