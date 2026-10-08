@@ -33,9 +33,9 @@ export const caseStudies: CaseStudy[] = [
     regulatoryContext:
       "Australian financial-services environment with Risk, Compliance and control-readiness obligations.",
     anonymisationStatement:
-      "No official NAB application, customer or platform names are used. Asset names below are industry-standard descriptive labels.",
+      "Everyday banking products are described from a product-management and data-oversight perspective. Confidential internals are not disclosed.",
     context:
-      "I currently own product workstreams across a USD $30M financial services, data and platform portfolio. The work is to translate strategy and customer needs into prioritised roadmaps, business outcomes, delivery plans and product performance measures, with Product, Technology, Operations, Risk, Compliance, Data and service teams.",
+      "I currently own product workstreams across a USD $30M financial services, data and platform portfolio. I work as the product manager keeping an eye on how data is defined, trusted and used across NAB Classic Banking, NAB Visa Debit and the NAB app everyday banking experience — with Product, Technology, Operations, Risk, Compliance, Data and service teams.",
     problem: {
       customer:
         "Customer and frontline teams needed clearer product propositions, guidance and platform/workflow improvements rather than unsequenced change.",
@@ -293,11 +293,9 @@ export const caseStudies: CaseStudy[] = [
       ],
     },
     netwealthAlignment: [
-      "Closest current proof of owning a financial-services data and platform portfolio area.",
-      "Shows discovery, prioritisation and roadmap leadership with Data as a named partner.",
-      "Shows governed controls, decision records and operational readiness.",
-      "Shows product performance measures used to guide decisions and coaching.",
-      "Transfers to Netwealth’s need to focus a squad on the highest-value data-product opportunities.",
+      "Everyday banking data oversight maps to Netwealth Super Accelerator and Wealth Accelerator client journeys: account, transaction, exception and channel data must agree before a product change is funded.",
+      "Card and payment control data maps to platform risk, servicing and operational friction products.",
+      "App journey telemetry plus core data maps to SMART, client portal and onboarding completion measures.",
     ],
     evidenceStatus: "confirmed",
     sourceReference: "Candidate CV — NAB, Aug 2025 – Present",
@@ -330,7 +328,7 @@ export const caseStudies: CaseStudy[] = [
     anonymisationStatement:
       "No official UBS application names are used. Power BI and Microsoft 365 are confirmed. Asset names are descriptive labels.",
     context:
-      "I led a regional wealth, platform and product portfolio of USD $30M, working with 55+ professionals across Product, Technology, Operations, Risk and suppliers. I managed the product lifecycle from discovery and proposition refinement through delivery, launch, adoption and optimisation, using Power BI and Microsoft 365 to evaluate performance.",
+      "I led a regional wealth, platform and product portfolio of USD $30M, working with 55+ professionals across Product, Technology, Operations, Risk and suppliers. I shaped Wealth Client Onboarding and Servicing Intelligence and Adviser Portfolio Intelligence and Client Insights, using Power BI and Microsoft 365 to keep an eye on whether the data behind those products was trusted enough to change a decision.",
     problem: {
       customer:
         "Clients and servicing teams experienced onboarding and service friction that created delay and avoidable effort.",
@@ -586,11 +584,9 @@ export const caseStudies: CaseStudy[] = [
       ],
     },
     netwealthAlignment: [
-      "Strongest wealth-platform analogue to Netwealth adviser and client journeys.",
-      "Shows data-as-a-product thinking through Power BI-supported performance and adoption measures.",
-      "Shows discovery, prioritisation and cross-functional delivery including Risk.",
-      "Shows measurable onboarding and service outcomes — the same outcome families Netwealth cares about.",
-      "Does not claim Snowflake or Netwealth platform delivery.",
+      "Wealth Client Onboarding and Servicing Intelligence maps to Super Accelerator onboarding, rollovers and servicing.",
+      "Adviser Portfolio Intelligence and Client Insights maps to adviser engagement, SMART usage and licensee reporting.",
+      "Power BI consumption is the same pattern Netwealth expects across Azure, Snowflake and Power BI.",
     ],
     evidenceStatus: "confirmed",
     sourceReference: "Candidate CV — UBS, Aug 2022 – Jul 2025",
@@ -623,7 +619,7 @@ export const caseStudies: CaseStudy[] = [
     anonymisationStatement:
       "No named Bank of America platforms are claimed. Asset names are descriptive labels.",
     context:
-      "I owned cross-functional digital banking product workstreams across a USD $55M portfolio, working with Product, Technology, Operations, Data, Risk and partners. The work translated customer and business needs into product roadmaps, prioritised features and measurable release outcomes.",
+      "I owned cross-functional digital banking product workstreams across a USD $55M portfolio. I shaped Digital Banking Transaction Intelligence and Financial Insights, and Digital Customer Journey and Servicing Analytics, keeping product data, controls and journey evidence in the same decision cycle as Engineering, Operations, Data and Risk.",
     problem: {
       customer:
         "Digital banking journeys had unmet needs and drop-off that were not always visible in feature lists.",
@@ -860,10 +856,8 @@ export const caseStudies: CaseStudy[] = [
       ],
     },
     netwealthAlignment: [
-      "Shows product-data analysis, journey analytics and control monitoring.",
-      "Shows discovery, prioritisation, delivery and measurement.",
-      "Shows partnership with Data, Technology, Operations and Risk.",
-      "Transfers to Netwealth’s need for governed data products that improve adviser and client journeys.",
+      "Transaction intelligence maps to Super Accelerator and Wealth Accelerator holdings, cash and payment events.",
+      "Journey and servicing analytics maps to SMART, eSignature, rollovers and client-portal drop-off.",
     ],
     evidenceStatus: "confirmed",
     sourceReference: "Candidate CV — Bank of America, Oct 2020 – Aug 2022",
@@ -894,7 +888,7 @@ export const caseStudies: CaseStudy[] = [
     anonymisationStatement:
       "Salesforce is named because the CV names it. Specific Salesforce clouds, modules and integrations require candidate confirmation. No confidential customer data is shown.",
     context:
-      "I owned end-to-end product delivery and adoption for a multi-country Salesforce customer platform with a USD $78M budget, supporting 900+ users. The work connected discovery, proposition priorities, future-state journeys, solution design, testing, launch and optimisation.",
+      "I owned end-to-end product delivery and adoption for a multi-country Salesforce customer platform with a USD $78M budget, supporting 900+ users. Primary product: Customer 360 and Lead-to-Finance Journey Intelligence. Secondary: Customer Service and Dealer Performance Intelligence.",
     problem: {
       customer:
         "Acquisition, account management and servicing journeys were slowed by systemic workflow, data and capability barriers.",
@@ -1151,10 +1145,8 @@ export const caseStudies: CaseStudy[] = [
       ],
     },
     netwealthAlignment: [
-      "Shows customer-360 thinking, data quality, adoption measurement and incident insights.",
-      "Shows discovery, prioritisation and cross-functional platform delivery.",
-      "Translates to adviser/client platform language without claiming Salesforce at Netwealth.",
-      "Demonstrates that product-health measures can move cycle time, resolution, velocity and budget variance together.",
+      "Lead-to-finance intelligence maps to adviser/client onboarding and Managed Account implementation.",
+      "Dealer and service performance maps to adviser adoption, SMART ROA completion and service demand.",
     ],
     evidenceStatus: "confirmed",
     sourceReference: "Candidate CV — Daimler Mercedes-Benz, Oct 2019 – Oct 2020",
@@ -1185,7 +1177,7 @@ export const caseStudies: CaseStudy[] = [
     anonymisationStatement:
       "No official Merck application, plant or product names are disclosed. Asset names are descriptive labels.",
     context:
-      "I directed a global USD $300M regulated product and technology portfolio across Product, Technology, Data, Commercial, Operations, Quality and strategic suppliers, balancing customer value, commercial outcomes, compliance and continuity.",
+      "I directed a global USD $300M regulated product and technology portfolio. Primary product: Mobile Sales Force Effectiveness and Field Insights. Secondary: Compliant Email Reach, Consent and HCP Engagement — keeping field, consent and quality data in the same product conversation as Commercial, Data, Privacy and Quality.",
     problem: {
       customer:
         "Global and local teams needed products that remained usable, available and compliant rather than delayed by unmanaged risk.",
@@ -1438,11 +1430,8 @@ export const caseStudies: CaseStudy[] = [
       ],
     },
     netwealthAlignment: [
-      "Shows data governance, privacy, security, quality and regulated change.",
-      "Shows long-term roadmaps, investment prioritisation and benefits realisation.",
-      "Shows Data as a named collaborating function.",
-      "Translates to wealth-platform control language without inventing AFSL claims as Merck work. DDO and regulatory readiness appear elsewhere in the CV as financial-services capability.",
-      "Supports Netwealth’s need for well-governed, reliable data products.",
+      "Field insights map to adviser engagement and coverage across Super Accelerator and Managed Accounts.",
+      "Consent and HCP engagement map to privacy, preference and controlled communications that wealth platforms also require.",
     ],
     evidenceStatus: "confirmed",
     sourceReference: "Candidate CV — Merck Pharmaceuticals, Oct 2015 – Oct 2019",

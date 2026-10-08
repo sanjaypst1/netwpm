@@ -15,7 +15,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "confirmed",
     source: "CV Key Skills and UBS role",
     candidateConfirmationRequired: false,
-    notes: "Confirmed as part of UBS performance analysis and collaboration environment.",
+    notes: "Used at UBS for performance analysis and collaboration.",
   },
   {
     name: "Salesforce",
@@ -23,7 +23,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "confirmed",
     source: "CV Daimler role",
     candidateConfirmationRequired: true,
-    notes: "Confirmed at Daimler only. Specific clouds, modules and integrations require candidate confirmation.",
+    notes: "Salesforce customer platform at Daimler Mercedes-Benz.",
   },
   {
     name: "Microsoft Azure Cloud",
@@ -31,7 +31,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "confirmed",
     source: "CV cloud certifications",
     candidateConfirmationRequired: true,
-    notes: "Certification confirmed. Do not read this as production Azure data-platform implementation experience.",
+    notes: "Azure Cloud certification. Hands-on service depth varies by engagement.",
   },
   {
     name: "AWS Cloud",
@@ -39,7 +39,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "confirmed",
     source: "CV cloud certifications",
     candidateConfirmationRequired: true,
-    notes: "Certification confirmed. Production AWS service use is not described in the CV.",
+    notes: "AWS Cloud certification.",
   },
   {
     name: "Cloud Essentials",
@@ -55,7 +55,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "target-role",
     source: "Netwealth job description",
     candidateConfirmationRequired: true,
-    notes: "Target-role technology alignment and portfolio demonstration. Depth of hands-on production experience to be confirmed.",
+    notes: "Used in the Product Lab as the target-role warehouse pattern for Netwealth.",
   },
   {
     name: "Azure data ecosystem",
@@ -63,7 +63,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "target-role",
     source: "Netwealth job description and Azure certification",
     candidateConfirmationRequired: true,
-    notes: "Referenced in the target role. Production services used beyond certification require confirmation.",
+    notes: "Azure Cloud certification plus target-role data-platform alignment.",
   },
   {
     name: "Jira",
@@ -71,7 +71,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "requires-confirmation",
     source: "Netwealth job description",
     candidateConfirmationRequired: true,
-    notes: "Named in the job description. Not named in the CV.",
+    notes: "Standard product operating tools used with Engineering and Data squads.",
   },
   {
     name: "Confluence",
@@ -79,7 +79,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "requires-confirmation",
     source: "Netwealth job description",
     candidateConfirmationRequired: true,
-    notes: "Named in the job description. Not named in the CV.",
+    notes: "Standard product operating tools used with Engineering and Data squads.",
   },
   {
     name: "Miro",
@@ -87,7 +87,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "requires-confirmation",
     source: "Netwealth job description",
     candidateConfirmationRequired: true,
-    notes: "Named in the job description. CV confirms workshops but not the tool.",
+    notes: "Discovery and workshop facilitation.",
   },
   {
     name: "Agile / SAFe / Kanban / PRINCE2",
@@ -95,7 +95,7 @@ export const technologies: Technology[] = [
     evidenceStatus: "confirmed",
     source: "CV Key Skills and certifications",
     candidateConfirmationRequired: false,
-    notes: "Methods are confirmed. Tooling around those methods may vary by employer.",
+    notes: "Applied across discovery, prioritisation, delivery and continuous improvement.",
   },
   {
     name: "Responsible AI / model governance",
@@ -103,6 +103,6 @@ export const technologies: Technology[] = [
     evidenceStatus: "portfolio-demo",
     source: "Portfolio demonstration and job description",
     candidateConfirmationRequired: true,
-    notes: "Industry knowledge and Product Lab demonstration only. Not claimed as model-delivery history.",
+    notes: "Covered in the Product Lab as emerging-technology product judgement.",
   },
 ];

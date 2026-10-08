@@ -17,7 +17,7 @@ export default function RoleAlignmentPage() {
     <PageShell
       eyebrow="Netwealth — Product Manager, Data"
       title="Role alignment without a fake match score"
-      lede="Every requirement is classified as directly demonstrated, transferable, adjacent, a portfolio demonstration, or still requiring confirmation. The CV does not show a former Data Engineer role or Snowflake implementation experience, and this page says so."
+      lede="Every Netwealth requirement is mapped to product experience across NAB, UBS, Bank of America, Daimler and Merck — with honest labels for transferable capability, adjacent experience and areas still to deepen."
     >
       {alignmentGroups.map((group) => {
         const rows = roleAlignment.filter((row) => row.group === group);

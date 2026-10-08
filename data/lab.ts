@@ -1,6 +1,6 @@
 export const lab = {
   title: "Adviser and Client Intelligence Data Product",
-  badge: "Portfolio demonstration designed for the Netwealth Product Manager, Data opportunity. Not a product previously delivered at Netwealth and not an employment claim.",
+  badge: "Concept product for the Netwealth Product Manager, Data opportunity — showing how I would approach adviser and client intelligence.",
   vision:
     "Give advisers, service teams, Product Managers, Operations, Risk and Compliance timely, trusted and appropriately governed information about adviser engagement, client servicing, platform activity, operational friction and emerging risks.",
   problem:

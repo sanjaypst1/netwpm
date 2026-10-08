@@ -52,6 +52,19 @@ export interface ProductAsset {
   status: EvidenceStatus;
 }
 
+export interface OwnedProduct {
+  name: string;
+  workArea: string;
+  purpose: string;
+  primaryUsers: string[];
+  whyDataWasComplex: string;
+  dataTypes: { label: string; detail: string }[];
+  challenges: string[];
+  impact: string;
+  frontend: string[];
+  backend: string[];
+}
+
 export interface Challenge {
   title: string;
   challenge: string;

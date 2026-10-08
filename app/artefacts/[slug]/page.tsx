@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { artefacts } from "@/data/artefacts";
-import { EvidenceBadge } from "@/components/evidence/EvidenceBadge";
 
 export function generateStaticParams() {
   return artefacts.map((item) => ({ slug: item.slug }));
@@ -32,10 +31,7 @@ export default async function ArtefactPage({
       <Link href="/artefacts" className="text-sm text-muted hover:text-navy">
         All artefacts
       </Link>
-      <div className="mt-4">
-        <EvidenceBadge status={item.status} />
-      </div>
-      <h1 className="mt-3 font-serif text-4xl text-navy">{item.title}</h1>
+      <h1 className="mt-6 font-serif text-4xl text-navy">{item.title}</h1>
       <p className="mt-3 text-lg text-muted">{item.purpose}</p>
       <p className="mt-2 text-sm text-muted">Used in: {item.usedIn}</p>
       <div className="mt-8 space-y-6">

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { caseStudies, caseStudyFilters } from "@/data/case-studies";
-import { EvidenceBadge } from "@/components/evidence/EvidenceBadge";
+import { ownedProductsByCase } from "@/data/owned-products";
 import type { CaseStudyTag } from "@/types";
 
 export function CaseStudyIndex() {
@@ -29,24 +29,28 @@ export function CaseStudyIndex() {
         ))}
       </div>
       <ul className="mt-8 grid gap-4 md:grid-cols-2">
-        {visible.map((study) => (
-          <li key={study.id}>
-            <Link
-              href={`/case-studies/${study.slug}`}
-              className="block h-full rounded-2xl border border-line bg-cream p-5 hover:border-teal"
-            >
-              <p className="text-xs uppercase tracking-[0.16em] text-teal">
-                {study.dates} · {study.portfolioSize}
-              </p>
-              <h2 className="mt-2 font-serif text-2xl text-navy">{study.organisation}</h2>
-              <p className="mt-2 text-sm text-muted">{study.role}</p>
-              <p className="mt-3 text-sm leading-6 text-ink">{study.problem.whyItMattered}</p>
-              <div className="mt-4">
-                <EvidenceBadge status={study.evidenceStatus} />
-              </div>
-            </Link>
-          </li>
-        ))}
+        {visible.map((study) => {
+          const products = ownedProductsByCase[study.id] ?? [];
+          return (
+            <li key={study.id}>
+              <Link
+                href={`/case-studies/${study.slug}`}
+                className="block h-full rounded-2xl border border-line bg-cream p-5 hover:border-teal"
+              >
+                <p className="text-xs uppercase tracking-[0.16em] text-teal">
+                  {study.dates} · {study.portfolioSize}
+                </p>
+                <h2 className="mt-2 font-serif text-2xl text-navy">{study.organisation}</h2>
+                <p className="mt-2 text-sm text-muted">{study.role}</p>
+                <ul className="mt-4 space-y-1 text-sm text-ink">
+                  {products.map((product) => (
+                    <li key={product.name}>· {product.name}</li>
+                  ))}
+                </ul>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

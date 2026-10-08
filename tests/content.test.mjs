@@ -40,3 +40,13 @@ test("role alignment does not invent a Data Engineer history", () => {
 test("no fabricated match score", () => {
   assert.doesNotMatch(alignment, /%\s*match/i);
 });
+
+test("named products exist for each employer", () => {
+  const products = readFileSync(new URL("../data/owned-products.ts", import.meta.url), "utf8");
+  assert.match(products, /NAB Classic Banking account/);
+  assert.match(products, /NAB Visa Debit card/);
+  assert.match(products, /Wealth Client Onboarding and Servicing Intelligence/);
+  assert.match(products, /Digital Banking Transaction Intelligence and Financial Insights/);
+  assert.match(products, /Customer 360 and Lead-to-Finance Journey Intelligence/);
+  assert.match(products, /Mobile Sales Force Effectiveness and Field Insights Product/);
+});

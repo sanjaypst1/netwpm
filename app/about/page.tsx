@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { PageShell } from "@/components/layout/PageShell";
 import { profile } from "@/data/profile";
 import { technologies } from "@/data/technologies";
-import { EvidenceBadge } from "@/components/evidence/EvidenceBadge";
 
 export const metadata: Metadata = { title: "About" };
 
@@ -51,7 +50,6 @@ export default function AboutPage() {
               <tr className="border-b border-line text-xs uppercase tracking-[0.14em] text-muted">
                 <th className="py-2">Technology</th>
                 <th>Category</th>
-                <th>Status</th>
                 <th>Notes</th>
               </tr>
             </thead>
@@ -60,9 +58,6 @@ export default function AboutPage() {
                 <tr key={item.name} className="border-b border-line align-top">
                   <td className="py-3 font-medium text-navy">{item.name}</td>
                   <td className="py-3">{item.category}</td>
-                  <td className="py-3">
-                    <EvidenceBadge status={item.evidenceStatus} />
-                  </td>
                   <td className="py-3 text-muted">{item.notes}</td>
                 </tr>
               ))}

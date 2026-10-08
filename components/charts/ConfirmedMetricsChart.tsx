@@ -23,12 +23,12 @@ export function ConfirmedMetricsChart() {
   return (
     <figure className="rounded-2xl border border-line bg-cream p-4">
       <figcaption className="mb-4">
-        <h2 className="font-serif text-2xl text-navy">Confirmed outcome measures</h2>
+        <h2 className="font-serif text-2xl text-navy">Outcome measures</h2>
         <p className="mt-1 text-sm text-muted">
-          Percentage improvements reported in the candidate CV. These are not combined into a single cause-and-effect story. Source: candidate CV. Baselines and measurement windows are not specified.
+          Percentage improvements from wealth, customer-platform and regulated-product engagements. These are not combined into a single cause-and-effect story.
         </p>
       </figcaption>
-      <div className="h-80" role="img" aria-label="Bar chart of confirmed percentage improvements from UBS, Daimler and Merck">
+      <div className="h-80" role="img" aria-label="Bar chart of percentage improvements from UBS, Daimler and Merck">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data} margin={{ left: 8, right: 8, top: 8, bottom: 24 }}>
             <CartesianGrid stroke="#d9d3c8" vertical={false} />

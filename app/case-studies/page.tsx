@@ -8,8 +8,8 @@ export default function CaseStudiesPage() {
   return (
     <PageShell
       eyebrow="Case studies"
-      title="Five employer stories, one evidence-led structure"
-      lede="Each case study separates confirmed employment evidence from industry-standard product asset names and from challenges that are grounded in CV language."
+      title="Products, data and outcomes"
+      lede="Each case study starts with the products I shaped, why the data was complex, the users, the challenges and the frontend and backend environment I worked across as product manager."
     >
       <CaseStudyIndex />
     </PageShell>

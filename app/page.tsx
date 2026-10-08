@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { HeroSequence } from "@/components/animation/HeroSequence";
 import { TrustedDataNetworkLazy } from "@/components/three/TrustedDataNetworkLazy";
-import { EvidenceLegend } from "@/components/evidence/EvidenceBadge";
 import { ConfirmedMetricsChart } from "@/components/charts/ConfirmedMetricsChart";
 import { site } from "@/lib/site";
 import { profile } from "@/data/profile";
+import { ownedProductsByCase } from "@/data/owned-products";
+import { caseStudies } from "@/data/case-studies";
 
 export default function HomePage() {
   return (
@@ -57,22 +58,36 @@ export default function HomePage() {
             </p>
           ))}
         </div>
-        <p className="mt-6 max-w-3xl text-sm leading-6 text-muted">{profile.dataProductMindset[0]} {site.balancedStatement}</p>
+        <p className="mt-6 max-w-3xl text-sm leading-6 text-muted">
+          {profile.dataProductMindset[0]} {site.balancedStatement}
+        </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-14">
-        <ConfirmedMetricsChart />
+        <h2 className="font-serif text-3xl text-navy">Products I have shaped</h2>
+        <p className="mt-3 max-w-3xl text-sm text-muted">
+          I work as a product manager keeping an eye on how data is defined, trusted and used — not as a data engineer.
+        </p>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          {caseStudies.map((study) => (
+            <Link
+              key={study.id}
+              href={`/case-studies/${study.slug}`}
+              className="rounded-2xl border border-line bg-cream p-5 hover:border-teal"
+            >
+              <p className="text-xs uppercase tracking-[0.16em] text-teal">{study.organisation}</p>
+              <ul className="mt-3 space-y-1 text-sm text-ink">
+                {(ownedProductsByCase[study.id] ?? []).map((product) => (
+                  <li key={product.name}>· {product.name}</li>
+                ))}
+              </ul>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-16">
-        <h2 className="font-serif text-3xl text-navy">Evidence labels used throughout</h2>
-        <p className="mt-3 max-w-3xl text-sm text-muted">
-          Confirmed employment evidence is never mixed with portfolio demonstrations. Snowflake, Azure production services and Jira/Confluence/Miro are labelled honestly.
-        </p>
-        <div className="mt-5">
-          <EvidenceLegend />
-        </div>
-        <p className="mt-6 text-xs text-muted">{site.disclaimer}</p>
+        <ConfirmedMetricsChart />
       </section>
     </div>
   );

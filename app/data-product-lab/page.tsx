@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/layout/PageShell";
-import { EvidenceBadge } from "@/components/evidence/EvidenceBadge";
 import { lab, illustrativeMetricLabels } from "@/data/lab";
 
 export const metadata: Metadata = { title: "Data Product Lab" };
@@ -33,10 +32,7 @@ export default function LabPage() {
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           {lab.products.map((product) => (
             <article key={product.name} className="rounded-2xl border border-line bg-cream p-4">
-              <div className="flex items-center justify-between gap-2">
-                <h3 className="font-medium text-navy">{product.name}</h3>
-                <EvidenceBadge status="portfolio-demo" />
-              </div>
+              <h3 className="font-medium text-navy">{product.name}</h3>
               <p className="mt-2 text-sm text-muted">{product.job}</p>
             </article>
           ))}
