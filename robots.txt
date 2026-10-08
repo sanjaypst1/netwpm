@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://sanjaypst1.github.io/netwpm/sitemap.xml
